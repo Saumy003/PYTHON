@@ -35,4 +35,42 @@ def multiply(*args):
 
     return product
         
-print(multiply(1,2,3,4,5,6))
+print(multiply(1,2,3,4,5,6))   #720
+
+#  **kwargs
+#  **kwargs allows us to pass any number of keyword arguments.
+#  Keywords arguments means that they contain a key-value pair, like a python dictionary.
+
+def display(**kwargs):
+    for (key,value) in kwargs.items():
+        print (key , "->" , value)
+
+display(india="delhi",srilanka = "colombo" , nepal = "kathmando")
+
+# Nested function
+# Example 1
+def g(x):
+    def h():
+        x = "abc"
+    x = x +1
+    print("in g(x): x=" , x)       # x = 4
+    h()
+    return x
+
+x = 3 
+z = g(x)
+
+# Example 2
+def g(x):
+    def h(x):
+        x = x + 1
+        print("in h(x): x =" , x)
+    x = x + 1
+    print("in g(x): x=" , x)
+    h(x)
+    return x
+
+x = 3
+z = g(x)
+print("in main program scope: x =" , x)
+print("in main program scope: z =" , z)
