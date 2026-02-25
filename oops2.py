@@ -7,7 +7,7 @@ class Car:
         self.brk = False
         self.clutch = False
 
-    def start():
+    def start(self):
         self.clutch = True
         self.acc = True
 print("car started..")
