@@ -1,1 +1,4 @@
-Hello ! I am learning File Handling
+hii
+hello
+kaise ho
+main badhiya tum bataoo
