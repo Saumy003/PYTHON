@@ -1,6 +1,6 @@
 # First project using Tkinter => Wallpaper viewer
 
-from tkinter import *
+from tkinter import * 
 from PIL import ImageTk, Image
 import os
 
@@ -15,17 +15,17 @@ counter = 1
 root = Tk()
 
 root.title("Wallpapers Viwer")
-root.iconbitmap("D:\PYTHON\gui_tkinter\Flipkart_logo_(2026).svg")
+root.iconbitmap("D:\\PYTHON\\gui_tkinter\\Flipkart_logo_(2026).svg")
 
 root.minsize(100, 100)
 root.geometry("300x400")
 root.configure(background="black")
 
-files = os.listdir("D:\PYTHON\gui_tkinter\wallpaper")
+files = os.listdir("D:\\PYTHON\\gui_tkinter\\wallpaper")
 
 img_array = []
 for file in files:
-    img = Image.open(os.path.join("D:\PYTHON\gui_tkinter\wallpaper", file))
+    img = Image.open(os.path.join("D:\\PYTHON\\gui_tkinter\\wallpaper", file))
     resized_img = img.resize((200,300))
     img_array.append(ImageTk.PhotoImage(resized_img))
 
