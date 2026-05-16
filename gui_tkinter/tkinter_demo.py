@@ -23,7 +23,7 @@ root.geometry("350x500")
 
 root.configure(background="#0096DC")
 
-img = Image.open("D:\PYTHON\gui_tkinter\\1763173374938.jpg")
+img = Image.open("D:\\PYTHON\\gui_tkinter\\1763173374938.jpg")
 resize_img = img.resize((100, 100))
 img = ImageTk.PhotoImage(resize_img)
 
