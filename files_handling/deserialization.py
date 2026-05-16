@@ -17,3 +17,18 @@ with open("D:\\PYTHON\\files_handling\\demo_tuple.json", "r") as f:
 
 
 # deserialize in nested dict
+
+with open("D:\\PYTHON\\files_handling\\nested_dict.json", "r") as f:
+    print(json.load(f))
+
+
+# deserialization of custom object
+
+# as a string
+with open("D:\\PYTHON\\files_handling\\object.json", "r") as f:
+    print(json.load(f))
+    
+# as a dict
+
+with open("D:\\PYTHON\\files_handling\\object_dict.json", "r") as f:
+    print(json.load(f))
